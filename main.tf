@@ -13,6 +13,9 @@ output "random" {
 module "hello" {
   source  = "app.terraform.io/ILM_Demo_Space/hello/random"
   version = "6.0.0"
-  hellos = {hello: 'hello1', second_hello: 'hello2'}
+  hellos = {
+    hello = 'hello1'
+    second_hello = 'hello2'
+  }
   some_key = 'random_key'
 }
